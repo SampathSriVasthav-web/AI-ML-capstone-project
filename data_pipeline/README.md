@@ -40,3 +40,5 @@ pip install requests beautifulsoup4 pandas
 Run:
 
 python pipeline.py
+
+Project verified and final SQL queries completed.

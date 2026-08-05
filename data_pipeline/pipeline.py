@@ -156,48 +156,58 @@ conn.commit()
 
 #Step 5 — 5 SQL Queries:
 
-#Query 1 — WHERE:
+output_file = open("query_outputs.txt", "w", encoding="utf-8")
+
+def save_query(title, query):
+    output_file.write("=" * 60 + "\n")
+    output_file.write(title + "\n")
+    output_file.write("=" * 60 + "\n\n")
+    output_file.write(query.strip() + "\n\n")
+
+    result = pd.read_sql(query, conn)
+
+    output_file.write(result.to_string(index=False))
+    output_file.write("\n\n")
+
+    print(f"\n{title}")
+    print(result)
+
+    return result
+
+# Query 1
 q1 = """
 SELECT title, price_inr
 FROM books
 WHERE rating = 5;
 """
+save_query("QUERY 1 - WHERE", q1)
 
-print(pd.read_sql(q1, conn))
-
-#Query 2 — ORDER BY + LIMIT:
-
+# Query 2
 q2 = """
 SELECT title, price_inr
 FROM books
 ORDER BY price_inr DESC
 LIMIT 10;
 """
+save_query("QUERY 2 - ORDER BY + LIMIT", q2)
 
-print(pd.read_sql(q2, conn))
-
-#Query 3 — DISTINCT:
-
+# Query 3
 q3 = """
 SELECT DISTINCT rating
 FROM books
 ORDER BY rating;
 """
+save_query("QUERY 3 - DISTINCT", q3)
 
-print(pd.read_sql(q3, conn))
-
-#Query 4 — BETWEEN
-
+# Query 4
 q4 = """
 SELECT title, price_gbp
 FROM books
 WHERE price_gbp BETWEEN 20 AND 40;
 """
+save_query("QUERY 4 - BETWEEN", q4)
 
-print(pd.read_sql(q4, conn))
-
-#Query 5 — JOIN:
-
+# Query 5
 q5 = """
 SELECT
     b.title,
@@ -209,10 +219,9 @@ JOIN categories c
 ON b.category_id = c.category_id
 ORDER BY b.rating DESC;
 """
+join_sql = save_query("QUERY 5 - JOIN", q5)
 
-join_sql = pd.read_sql(q5, conn)
-
-print(join_sql)
+output_file.close()
 
 #Step 6 — pd.read_sql() vs pd.merge():
 

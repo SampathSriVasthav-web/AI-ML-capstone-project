@@ -77,6 +77,20 @@ The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)    5517
                                                   Between Shades of Gray    2193.34
                                                      While You Were Mine    4359.26
                        A Spy's Devotion (The Regency Spies of London #1)    1790.33
+                                      1,000 Places to See Before You Die    2751.44
+                                  A Time of Torment (Charlie Parker #14)    5100.92
+       What Happened on Beale Street (Secrets of the South Mysteries #2)    2676.54
+The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)    5517.65
+                                       The Silkworm (Cormoran Strike #2)    2431.78
+                                                       The Girl You Lost    1296.59
+                                 A Flight of Arrows (The Pathfinders #2)    5858.42
+                                                            Mrs. Houdini    3191.38
+                                                   The Passion of Dolssa    2987.76
+                                                  Voyager (Outlander #3)    2222.89
+                                                            The Red Tent    3762.13
+                                                  Between Shades of Gray    2193.34
+                                                     While You Were Mine    4359.26
+                       A Spy's Devotion (The Regency Spies of London #1)    1790.33
 
 ============================================================
 QUERY 2 - ORDER BY + LIMIT
@@ -93,7 +107,7 @@ LIMIT 10;
                                          Boar Island (Anna Pigeon #19)    6275.14
                                          Boar Island (Anna Pigeon #19)    6275.14
                                          Boar Island (Anna Pigeon #19)    6275.14
-The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)    6087.35
+                                         Boar Island (Anna Pigeon #19)    6275.14
 The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)    6087.35
 The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)    6087.35
 The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)    6087.35
@@ -123,6 +137,39 @@ FROM books
 WHERE price_gbp BETWEEN 20 AND 40;
 
                                                                                             title  price_gbp
+                              Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel      36.94
+                                                                             Under the Tuscan Sun      37.33
+                                                                         The Great Railway Bazaar      30.54
+The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)      23.21
+                                                        Neither Here nor There: Travels in Europe      38.95
+                                                               1,000 Places to See Before You Die      26.08
+                                                                 Poisonous (Max Revere Novels #3)      26.80
+                                                                                      Most Wanted      35.28
+                                                                                        The Widow      27.26
+                                What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37
+                                                 Delivering the Truth (Quaker Midwife Mystery #1)      20.89
+                                              The Mysterious Affair at Styles (Hercule Poirot #1)      24.80
+                                                            In the Woods (Dublin Murder Squad #1)      38.38
+                                                                The Silkworm (Cormoran Strike #2)      23.05
+                                                               Extreme Prey (Lucas Davenport #26)      25.40
+                                                              Career of Evil (Cormoran Strike #3)      24.72
+                                                             Blood Defense (Samantha Brinkman #1)      20.30
+                        Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton      29.69
+                                                                            The House by the Lake      36.95
+                                                                                     Mrs. Houdini      30.25
+                                                                        The Marriage of Opposites      28.08
+                                                                             Love, Lies and Spies      20.55
+                                                                                A Paris Apartment      39.01
+                                                                           The Invention of Wings      37.34
+                                                  World Without End (The Pillars of the Earth #2)      32.97
+                                                                            The Passion of Dolssa      28.32
+                                                                        Girl With a Pearl Earring      26.77
+                                                                           Voyager (Outlander #3)      21.07
+                                                                                     The Red Tent      35.66
+                                                                           Between Shades of Gray      20.79
+                                                                                The Secret Healer      34.56
+                                                                                         Starlark      25.83
+                                                                            Lost Among the Living      27.70
                               Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel      36.94
                                                                              Under the Tuscan Sun      37.33
                                                                          The Great Railway Bazaar      30.54
@@ -374,6 +421,33 @@ ORDER BY b.rating DESC;
                                                                            Between Shades of Gray       5    2193.34 Historical Fiction
                                                                               While You Were Mine       5    4359.26 Historical Fiction
                                                 A Spy's Devotion (The Regency Spies of London #1)       5    1790.33 Historical Fiction
+                                                               1,000 Places to See Before You Die       5    2751.44             Travel
+                                                           A Time of Torment (Charlie Parker #14)       5    5100.92            Mystery
+                                What Happened on Beale Street (Secrets of the South Mysteries #2)       5    2676.54            Mystery
+                         The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)       5    5517.65            Mystery
+                                                                The Silkworm (Cormoran Strike #2)       5    2431.78            Mystery
+                                                                                The Girl You Lost       5    1296.59            Mystery
+                                                          A Flight of Arrows (The Pathfinders #2)       5    5858.42 Historical Fiction
+                                                                                     Mrs. Houdini       5    3191.38 Historical Fiction
+                                                                            The Passion of Dolssa       5    2987.76 Historical Fiction
+                                                                           Voyager (Outlander #3)       5    2222.89 Historical Fiction
+                                                                                     The Red Tent       5    3762.13 Historical Fiction
+                                                                           Between Shades of Gray       5    2193.34 Historical Fiction
+                                                                              While You Were Mine       5    4359.26 Historical Fiction
+                                                A Spy's Devotion (The Regency Spies of London #1)       5    1790.33 Historical Fiction
+                               Full Moon over Noahâs Ark: An Odyssey to Mount Ararat and Beyond       4    5214.86             Travel
+                                                                 A Year in Provence (Provence #1)       4    6000.84             Travel
+                                                                                    Sharp Objects       4    5045.01            Mystery
+                                                                              The Past Never Ends       4    5960.75            Mystery
+                                                  The Murder of Roger Ackroyd (Hercule Poirot #4)       4    4652.55            Mystery
+                                            Murder at the 42nd Street Library (Raymond Ambler #1)       4    5734.98            Mystery
+                                                 Delivering the Truth (Quaker Midwife Mystery #1)       4    2203.90            Mystery
+                                              The Mysterious Affair at Styles (Hercule Poirot #1)       4    2616.40            Mystery
+                           The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)       4    6087.35            Mystery
+                                                                        The Marriage of Opposites       4    2962.44 Historical Fiction
+                                                                                A Paris Apartment       4    4115.55 Historical Fiction
+                                                  World Without End (The Pillars of the Earth #2)       4    3478.34 Historical Fiction
+                                                                            Lost Among the Living       4    2922.35 Historical Fiction
                                Full Moon over Noahâs Ark: An Odyssey to Mount Ararat and Beyond       4    5214.86             Travel
                                                                  A Year in Provence (Provence #1)       4    6000.84             Travel
                                                                                     Sharp Objects       4    5045.01            Mystery
@@ -519,6 +593,22 @@ ORDER BY b.rating DESC;
                                                        The Constant Princess (The Tudor Court #1)       3    1753.41 Historical Fiction
                                                                                 The Secret Healer       3    3646.08 Historical Fiction
                                                                                          Starlark       3    2725.06 Historical Fiction
+                               See America: A Celebration of Our National Parks & Treasured Sites       3    5155.78             Travel
+                                                                             Under the Tuscan Sun       3    3938.31             Travel
+                                                        Neither Here nor There: Travels in Europe       3    4109.23             Travel
+                                                                 Poisonous (Max Revere Novels #3)       3    2827.40            Mystery
+                                                                                      Most Wanted       3    3722.04            Mystery
+                                                                    Boar Island (Anna Pigeon #19)       3    6275.14            Mystery
+                                                                                Playing with Fire       3    1446.41            Mystery
+                                                                                       The Exiled       3    4583.98            Mystery
+                                                               Extreme Prey (Lucas Davenport #26)       3    2679.70            Mystery
+                                                        The Girl In The Ice (DCI Erika Foster #1)       3    1672.18            Mystery
+                                                             Blood Defense (Samantha Brinkman #1)       3    2141.65            Mystery
+                        Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton       3    3132.30 Historical Fiction
+                                                  Glory over Everything: Beyond The Kitchen House       3    4836.12 Historical Fiction
+                                                       The Constant Princess (The Tudor Court #1)       3    1753.41 Historical Fiction
+                                                                                The Secret Healer       3    3646.08 Historical Fiction
+                                                                                         Starlark       3    2725.06 Historical Fiction
                                                                           It's Only the Himalayas       2    4765.44             Travel
                               Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel       2    3897.17             Travel
                                                                                A Summer In Europe       2    4677.87             Travel
@@ -579,6 +669,32 @@ ORDER BY b.rating DESC;
                                                                                       Lilac Girls       2    1823.04 Historical Fiction
                                                                  The Last Painting of Sara de Vos       2    5860.52 Historical Fiction
                                                                             Girl in the Blue Coat       2    4940.56 Historical Fiction
+                                                                          It's Only the Himalayas       2    4765.44             Travel
+                              Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel       2    3897.17             Travel
+                                                                               A Summer In Europe       2    4677.87             Travel
+                                                                   The Last Mile (Amos Decker #2)       2    5719.16            Mystery
+                                                          A Study in Scarlet (Sherlock Holmes #1)       2    1765.02            Mystery
+                                                                                        The Widow       2    2875.93            Mystery
+                                                            In the Woods (Dublin Murder Squad #1)       2    4049.09            Mystery
+                                                              Career of Evil (Cormoran Strike #3)       2    2607.96            Mystery
+                                                                             Love, Lies and Spies       2    2168.02 Historical Fiction
+                                                                                      Lilac Girls       2    1823.04 Historical Fiction
+                                                                 The Last Painting of Sara de Vos       2    5860.52 Historical Fiction
+                                                                            Girl in the Blue Coat       2    4940.56 Historical Fiction
+                                                                         The Great Railway Bazaar       1    3221.97             Travel
+The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)       1    2448.66             Travel
+                                                                             In a Dark, Dark Wood       1    2070.96            Mystery
+                                                                                 A Murder in Time       1    1755.52            Mystery
+                                                           That Darkness (Gardiner and Renner #1)       1    1468.56            Mystery
+                                                             Tastes Like Fear (DI Marnie Rome #3)       1    1127.79            Mystery
+                                                                       Hide Away (Eve Duncan #20)       1    1249.12            Mystery
+                                                        The Cuckoo's Calling (Cormoran Strike #1)       1    2026.66            Mystery
+                                                              1st to Die (Women's Murder Club #1)       1    5694.89            Mystery
+                                                                               Tipping the Velvet       1    5669.57 Historical Fiction
+                                                                            The House by the Lake       1    3898.23 Historical Fiction
+                                                                           The Invention of Wings       1    3939.37 Historical Fiction
+                                                                        Girl With a Pearl Earring       1    2824.24 Historical Fiction
+                                                The Guernsey Literary and Potato Peel Pie Society       1    5225.42 Historical Fiction
                                                                          The Great Railway Bazaar       1    3221.97             Travel
 The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)       1    2448.66             Travel
                                                                              In a Dark, Dark Wood       1    2070.96            Mystery

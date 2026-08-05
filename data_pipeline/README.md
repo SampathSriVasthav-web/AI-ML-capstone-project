@@ -41,4 +41,8 @@ Run:
 
 python pipeline.py
 
+
+# Verification
+
+
 Project verified and final SQL queries completed.

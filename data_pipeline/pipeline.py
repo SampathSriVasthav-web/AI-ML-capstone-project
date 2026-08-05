@@ -156,7 +156,10 @@ conn.commit()
 
 #Step 5 — 5 SQL Queries:
 
-output_file = open("query_outputs.txt", "w", encoding="utf-8")
+import os
+
+output_path = os.path.join(os.path.dirname(__file__), "query_outputs.txt")
+output_file = open(output_path, "w", encoding="utf-8")
 
 def save_query(title, query):
     output_file.write("=" * 60 + "\n")
